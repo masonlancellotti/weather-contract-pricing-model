@@ -1,0 +1,40 @@
+[project]
+name = "weather-trader"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    # Kalshi official SDK (handles RSA signing)
+    "kalshi-python-sync>=3.13.0",
+    # Polymarket official SDK (handles EIP-712 + HMAC)
+    "py-clob-client>=0.34.6",
+    # Web3 for Polygon wallet management
+    "web3>=6.0.0",
+    # HTTP
+    "httpx>=0.27.0",
+    # WebSocket
+    "websockets>=12.0",
+    # Config / validation
+    "pydantic>=2.0.0",
+    "pydantic-settings>=2.0.0",
+    "python-dotenv>=1.0.0",
+    # Data
+    "pandas>=2.0.0",
+    # Dashboard
+    "streamlit>=1.35.0",
+    "plotly>=5.0.0",
+    "rich>=13.7.0",
+    # Scheduling
+    "apscheduler>=3.10.0",
+    # Utils
+    "tenacity>=8.0.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0", "pytest-asyncio>=0.23.0", "ruff>=0.4.0"]
+
+[tool.ruff]
+line-length = 100
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

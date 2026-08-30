@@ -1,0 +1,21 @@
+NYC:
+  default_station: KNYC
+  notes: "Verify Kalshi rules; NYC products could use KNYC, KLGA, KJFK, or KEWR."
+PHIL:
+  default_station: KPHL
+AUS:
+  default_station: KAUS
+  notes: "Verify Kalshi exact source; previous settlement labels had AUS issues."
+LAX:
+  default_station: KLAX
+ATL:
+  default_station: KATL
+BOS:
+  default_station: KBOS
+CHI:
+  default_station: KORD
+  notes: "Verify Kalshi rules; Chicago may use O'Hare or Midway."
+MIA:
+  default_station: KMIA
+DEN:
+  default_station: KDEN
